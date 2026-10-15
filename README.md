@@ -12,7 +12,7 @@ As the package is currently built from source CMake and python3-dev package are 
  
  If you have the requirements satisfied run the following command
  ``` 
- pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple --no-deps capdpy==0.2.0 
+ pip install  uj-capdpy 
  ```
 
 ## Building from source
@@ -20,7 +20,7 @@ As the package is currently built from source CMake and python3-dev package are 
 Alternatively you can clone and build the library yourself.
 Make sure to include submodules when cloning the library. Use the following command
 ```
-git clone --recurse-submodules https://github.com/pszemo10/CAPD-Py
+git clone --recurse-submodules https://github.com/tomasz-kapela/CAPD-Py
 ```
 Then make the build directory and build the library like so
 ```
@@ -28,7 +28,7 @@ cmake -B build
 cmake --build build
 ```
 After that the shared object file with name starting with ```capdpy``` should appear in the build directory.
-This is a package which can be imorted into python by writing ```import capdpy```.
+This is a package which can be imported into python by writing ```import capdpy```.
 
 ## Running examples
 
