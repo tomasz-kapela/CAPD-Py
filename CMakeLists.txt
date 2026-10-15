@@ -3,7 +3,7 @@ project(CAPD-Py LANGUAGES CXX)
 
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_BUILD_TYPE Release)
 
 # add_compile_options(-fsanitize=address)
 # add_link_options(-fsanitize=address)

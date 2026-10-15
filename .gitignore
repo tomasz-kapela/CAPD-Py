@@ -1,2 +1,5 @@
 build
 dist
+py_env
+cmake-build-debug
+.idea

@@ -3,10 +3,28 @@ requires = ["scikit-build-core", "pybind11"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "capdpy"
-version = "0.2.0"
-description = "CAPD Python bindings"
+name = "uj-capdpy"
+version = "0.5.1"
+authors = [
+    { name="Przemysław Szewczak", email=""},
+    { name="Tomasz Kapela", email="tomasz.kapela@uj.edu.pl"}
+]
+description = "Python bindings for the CAPD library"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 license = "GPL-3.0-only"
 license-files = ["LICENSE"]
+
+[tool.scikit-build]
+#sdist.include = ["src/some_generated_file.txt"]
+sdist.exclude = [
+    "examples",
+    "dist",
+    "build",
+    "py_env"
+]
+
+[project.urls]
+Homepage = "http://capd.ii.uj.edu.pl/"
+Repository = "https://github.com/tomasz-kapela/CAPD-Py"
+#Issues = "https://github.com/pypa/sampleproject/issues"
