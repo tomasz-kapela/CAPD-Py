@@ -40,3 +40,7 @@ python example-name.py
 
 If you want to use the library built from source the simplest way is to copy the shared object file resulting from the build to examples directory.
 Then you can run examples with the command above. 
+
+## Documentation
+
+Documentation in Markdown is in the [docs](docs/README.md) directory.
